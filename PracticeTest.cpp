@@ -62,3 +62,10 @@ TEST(PracticeTest, is_number_palindrome)
     bool actual = obj.isPalindrome("123321");
     ASSERT_TRUE(actual);
 }
+
+TEST(PracticeTest, is_triple_space_palindrome)
+{
+    Practice obj;
+    bool actual = obj.isPalindrome("   ");
+    ASSERT_TRUE(actual);
+}
