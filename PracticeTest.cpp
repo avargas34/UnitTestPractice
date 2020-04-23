@@ -15,6 +15,7 @@ class PracticeTest : public ::testing::Test
 };
 
 //Palindrome Tests
+//Bugs: Spaces, 
 
 TEST(PracticeTest, is_simple_palindrome)
 {
@@ -80,7 +81,7 @@ TEST(PracticeTest, is_not_descending)
 	int num1 = 1;
 	int num2 = 2;
 	int num3 = 3;
-	bool actual = obj.sortDescending(num1, num2, num3);
+	obj.sortDescending(num1, num2, num3);
 	ASSERT_LT(num2, num1);
 	ASSERT_LT(num3, num2);
 	ASSERT_LT(num3, num1);
