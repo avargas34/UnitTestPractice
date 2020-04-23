@@ -82,7 +82,7 @@ TEST(PracticeTest, is_not_descending)
 	int num2 = 2;
 	int num3 = 3;
 	obj.sortDescending(num1, num2, num3);
-	ASSERT_LT(num2, num1);
-	ASSERT_LT(num3, num2);
-	ASSERT_LT(num3, num1);
+	ASSERT_GT(num2, num1);
+	ASSERT_GT(num3, num2);
+	ASSERT_GT(num3, num1);
 }
