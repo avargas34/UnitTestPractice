@@ -55,3 +55,10 @@ TEST(PracticeTest, is_single_letter_palindrome)
     bool actual = obj.isPalindrome("C");
     ASSERT_TRUE(actual);
 }
+
+TEST(PracticeTest, is_number_palindrome)
+{
+    Practice obj;
+    bool actual = obj.isPalindrome("123321");
+    ASSERT_TRUE(actual);
+}
