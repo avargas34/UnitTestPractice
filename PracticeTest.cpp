@@ -86,3 +86,15 @@ TEST(PracticeTest, is_not_descending)
 	ASSERT_GT(num3, num2);
 	ASSERT_GT(num3, num1);
 }
+
+TEST(PracticeTest, is_descending)
+{
+	Practice obj;
+	int num1 = 3;
+	int num2 = 2;
+	int num3 = 1;
+	obj.sortDescending(num1, num2, num3);
+	ASSERT_GT(num2, num1);
+	ASSERT_GT(num3, num2);
+	ASSERT_GT(num3, num1);
+}
