@@ -82,6 +82,6 @@ TEST(PracticeTest, is_not_descending)
 	int num3 = 3;
 	bool actual = obj.sortDescending(num1, num2, num3);
 	ASSERT_LT(num2, num1);
-	ASSERT_EQ(num3, num2);
-	ASSERT_EQ(num3, num1);
+	ASSERT_LT(num3, num2);
+	ASSERT_LT(num3, num1);
 }
