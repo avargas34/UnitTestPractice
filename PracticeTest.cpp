@@ -27,3 +27,31 @@ TEST(PracticeTest, is_not_a_palindrome)
 	bool actual = obj.isPalindrome("abd");
 	ASSERT_FALSE(actual);
 }
+
+TEST(PracticeTest, is_single_word_palindrome)
+{
+    Practice obj;
+    bool actual = obj.isPalindrome("Rotator");
+    ASSERT_TRUE(actual);
+}
+
+TEST(PracticeTest, is_double_word_palindrome)
+{
+    Practice obj;
+    bool actual = obj.isPalindrome("race car");
+    ASSERT_TRUE(actual);
+}
+
+TEST(PracticeTest, is_empty_palindrome)
+{
+    Practice obj;
+    bool actual = obj.isPalindrome("");
+    ASSERT_TRUE(actual);
+}
+
+TEST(PracticeTest, is_single_letter_palindrome)
+{
+    Practice obj;
+    bool actual = obj.isPalindrome("C");
+    ASSERT_TRUE(actual);
+}
