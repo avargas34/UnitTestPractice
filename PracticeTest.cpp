@@ -31,12 +31,14 @@ TEST(PracticeTest, is_not_a_palindrome)
 	ASSERT_FALSE(actual);
 }
 
+/* Is this a valid test?
 TEST(PracticeTest, is_single_word_palindrome)
 {
     Practice obj;
     bool actual = obj.isPalindrome("Rotator");
     ASSERT_TRUE(actual);
 }
+*/
 
 TEST(PracticeTest, is_double_word_palindrome)
 {
