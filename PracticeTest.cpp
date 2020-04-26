@@ -93,18 +93,6 @@ TEST(PracticeTest, is_not_descending)
 	EXPECT_LT(num3, num1);
 }
 
-TEST(PracticeTest, is_descending)
-{
-	Practice obj;
-	int num1 = 3;
-	int num2 = 2;
-	int num3 = 1;
-	obj.sortDescending(num1, num2, num3);
-	EXPECT_LT(num2, num1);
-	EXPECT_LT(num3, num2);
-	EXPECT_LT(num3, num1);
-}
-
 TEST(PracticeTest, is_not_descending2)
 {
 	Practice obj;
@@ -147,6 +135,30 @@ TEST(PracticeTest, is_not_descending5)
 	int num1 = 15;
 	int num2 = 29;
 	int num3 = -6;
+	obj.sortDescending(num1, num2, num3);
+	EXPECT_LT(num2, num1);
+	EXPECT_LT(num3, num2);
+	EXPECT_LT(num3, num1);
+}
+
+TEST(PracticeTest, is_descending)
+{
+	Practice obj;
+	int num1 = 3;
+	int num2 = 2;
+	int num3 = 1;
+	obj.sortDescending(num1, num2, num3);
+	EXPECT_LT(num2, num1);
+	EXPECT_LT(num3, num2);
+	EXPECT_LT(num3, num1);
+}
+
+TEST(PracticeTest, is_descending2)
+{
+	Practice obj;
+	int num1 = 99;
+	int num2 = 66;
+	int num3 = 33;
 	obj.sortDescending(num1, num2, num3);
 	EXPECT_LT(num2, num1);
 	EXPECT_LT(num3, num2);
