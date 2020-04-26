@@ -140,3 +140,15 @@ TEST(PracticeTest, is_not_descending4)
 	EXPECT_LT(num3, num2);
 	EXPECT_LT(num3, num1);
 }
+
+TEST(PracticeTest, is_not_descending5)
+{
+	Practice obj;
+	int num1 = 15;
+	int num2 = 29;
+	int num3 = -6;
+	obj.sortDescending(num1, num2, num3);
+	EXPECT_LT(num2, num1);
+	EXPECT_LT(num3, num2);
+	EXPECT_LT(num3, num1);
+}
