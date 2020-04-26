@@ -15,7 +15,6 @@ class PracticeTest : public ::testing::Test
 };
 
 //Palindrome Tests
-//Bugs: Spaces, 
 
 TEST(PracticeTest, is_simple_palindrome)
 {

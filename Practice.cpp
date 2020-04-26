@@ -33,13 +33,7 @@ void Practice::sortDescending(int &first, int &second, int &third)
 bool Practice::isPalindrome(string input)
 {
   //Remove spaces
-  int spaces = 0;
-
-  for (int i = 0; input[i]; i++)
-    if (input[i] != ' ')
-      input[spaces++] = input[i];
-
-  input[spaces] = '\0';
+  input = input.erase(remove(str.begin(), str.end(), ' '), str.end());
 
   for (int i = 0; i < input.size(); i++)
   {
