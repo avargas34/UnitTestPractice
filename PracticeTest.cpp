@@ -44,6 +44,13 @@ TEST(PracticeTest, is_double_word_palindrome)
     ASSERT_TRUE(actual);
 }
 
+TEST(PracticeTest, is_triple_word_palindrome)
+{
+    Practice obj;
+    bool actual = obj.isPalindrome("ab cc ba");
+    ASSERT_TRUE(actual);
+}
+
 TEST(PracticeTest, is_empty_palindrome)
 {
     Practice obj;
