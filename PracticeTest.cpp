@@ -86,13 +86,6 @@ TEST(PracticeTest, is_space_palindrome)
     ASSERT_TRUE(actual);
 }
 
-TEST(PracticeTest, is_null_palindrome)
-{
-    Practice obj;
-    bool actual = obj.isPalindrome(NULL);
-    ASSERT_FALSE(actual);
-}
-
 //Descending Tests
 
 TEST(PracticeTest, is_not_descending)
@@ -102,9 +95,9 @@ TEST(PracticeTest, is_not_descending)
 	int num2 = 2;
 	int num3 = 3;
 	obj.sortDescending(num1, num2, num3);
-	EXPECT_LT(num2, num1);
-	EXPECT_LT(num3, num2);
-	EXPECT_LT(num3, num1);
+	EXPECT_LE(num2, num1);
+	EXPECT_LE(num3, num2);
+	EXPECT_LE(num3, num1);
 }
 
 TEST(PracticeTest, is_not_descending2)
@@ -114,9 +107,9 @@ TEST(PracticeTest, is_not_descending2)
 	int num2 = 62;
 	int num3 = 1003;
 	obj.sortDescending(num1, num2, num3);
-	EXPECT_LT(num2, num1);
-	EXPECT_LT(num3, num2);
-	EXPECT_LT(num3, num1);
+	EXPECT_LE(num2, num1);
+	EXPECT_LE(num3, num2);
+	EXPECT_LE(num3, num1);
 }
 
 TEST(PracticeTest, is_not_descending3)
@@ -126,9 +119,9 @@ TEST(PracticeTest, is_not_descending3)
 	int num2 = 27;
 	int num3 = 204;
 	obj.sortDescending(num1, num2, num3);
-	EXPECT_LT(num2, num1);
-	EXPECT_LT(num3, num2);
-	EXPECT_LT(num3, num1);
+	EXPECT_LE(num2, num1);
+	EXPECT_LE(num3, num2);
+	EXPECT_LE(num3, num1);
 }
 
 TEST(PracticeTest, is_not_descending4)
@@ -138,9 +131,9 @@ TEST(PracticeTest, is_not_descending4)
 	int num2 = 67;
 	int num3 = 4;
 	obj.sortDescending(num1, num2, num3);
-	EXPECT_LT(num2, num1);
-	EXPECT_LT(num3, num2);
-	EXPECT_LT(num3, num1);
+	EXPECT_LE(num2, num1);
+	EXPECT_LE(num3, num2);
+	EXPECT_LE(num3, num1);
 }
 
 TEST(PracticeTest, is_not_descending5)
@@ -150,9 +143,9 @@ TEST(PracticeTest, is_not_descending5)
 	int num2 = 29;
 	int num3 = -6;
 	obj.sortDescending(num1, num2, num3);
-	EXPECT_LT(num2, num1);
-	EXPECT_LT(num3, num2);
-	EXPECT_LT(num3, num1);
+	EXPECT_LE(num2, num1);
+	EXPECT_LE(num3, num2);
+	EXPECT_LE(num3, num1);
 }
 
 TEST(PracticeTest, is_not_descending6)
@@ -162,9 +155,9 @@ TEST(PracticeTest, is_not_descending6)
 	int num2 = .001;
 	int num3 = 1;
 	obj.sortDescending(num1, num2, num3);
-	EXPECT_LT(num2, num1);
-	EXPECT_LT(num3, num2);
-	EXPECT_LT(num3, num1);
+	EXPECT_LE(num2, num1);
+	EXPECT_LE(num3, num2);
+	EXPECT_LE(num3, num1);
 }
 
 TEST(PracticeTest, is_descending)
@@ -174,9 +167,9 @@ TEST(PracticeTest, is_descending)
 	int num2 = 2;
 	int num3 = 1;
 	obj.sortDescending(num1, num2, num3);
-	EXPECT_LT(num2, num1);
-	EXPECT_LT(num3, num2);
-	EXPECT_LT(num3, num1);
+	EXPECT_LE(num2, num1);
+	EXPECT_LE(num3, num2);
+	EXPECT_LE(num3, num1);
 }
 
 TEST(PracticeTest, is_descending2)
@@ -186,9 +179,9 @@ TEST(PracticeTest, is_descending2)
 	int num2 = 66;
 	int num3 = 33;
 	obj.sortDescending(num1, num2, num3);
-	EXPECT_LT(num2, num1);
-	EXPECT_LT(num3, num2);
-	EXPECT_LT(num3, num1);
+	EXPECT_LE(num2, num1);
+	EXPECT_LE(num3, num2);
+	EXPECT_LE(num3, num1);
 }
 
 TEST(PracticeTest, is_descending3)
@@ -198,9 +191,9 @@ TEST(PracticeTest, is_descending3)
 	int num2 = -100;
 	int num3 = -300;
 	obj.sortDescending(num1, num2, num3);
-	EXPECT_LT(num2, num1);
-	EXPECT_LT(num3, num2);
-	EXPECT_LT(num3, num1);
+	EXPECT_LE(num2, num1);
+	EXPECT_LE(num3, num2);
+	EXPECT_LE(num3, num1);
 }
 
 TEST(PracticeTest, is_descending4)
@@ -210,9 +203,9 @@ TEST(PracticeTest, is_descending4)
 	int num2 = 0;
 	int num3 = -901;
 	obj.sortDescending(num1, num2, num3);
-	EXPECT_LT(num2, num1);
-	EXPECT_LT(num3, num2);
-	EXPECT_LT(num3, num1);
+	EXPECT_LE(num2, num1);
+	EXPECT_LE(num3, num2);
+	EXPECT_LE(num3, num1);
 }
 
 TEST(PracticeTest, is_descending5)
@@ -222,9 +215,9 @@ TEST(PracticeTest, is_descending5)
 	int num2 = .001;
 	int num3 = 0;
 	obj.sortDescending(num1, num2, num3);
-	EXPECT_LT(num2, num1);
-	EXPECT_LT(num3, num2);
-	EXPECT_LT(num3, num1);
+	EXPECT_LE(num2, num1);
+	EXPECT_LE(num3, num2);
+	EXPECT_LE(num3, num1);
 }
 
 TEST(PracticeTest, is_descending6)
@@ -234,7 +227,19 @@ TEST(PracticeTest, is_descending6)
 	int num2 = .000000001;
 	int num3 = -.000001;
 	obj.sortDescending(num1, num2, num3);
-	EXPECT_LT(num2, num1);
-	EXPECT_LT(num3, num2);
-	EXPECT_LT(num3, num1);
+	EXPECT_LE(num2, num1);
+	EXPECT_LE(num3, num2);
+	EXPECT_LE(num3, num1);
+}
+
+TEST(PracticeTest, is_same_number)
+{
+	Practice obj;
+	int num1 = 1;
+	int num2 = 1;
+	int num3 = 1;
+	obj.sortDescending(num1, num2, num3);
+	EXPECT_LE(num2, num1);
+	EXPECT_LE(num3, num2);
+	EXPECT_LE(num3, num1);
 }
