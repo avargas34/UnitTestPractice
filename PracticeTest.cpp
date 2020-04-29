@@ -51,6 +51,13 @@ TEST(PracticeTest, is_triple_word_palindrome)
     ASSERT_TRUE(actual);
 }
 
+TEST(PracticeTest, is_multi_word_palindrome)
+{
+    Practice obj;
+    bool actual = obj.isPalindrome("Eva can I see bees in a cave");
+    ASSERT_TRUE(actual);
+}
+
 TEST(PracticeTest, is_empty_palindrome)
 {
     Practice obj;
@@ -77,6 +84,13 @@ TEST(PracticeTest, is_space_palindrome)
     Practice obj;
     bool actual = obj.isPalindrome("   ");
     ASSERT_TRUE(actual);
+}
+
+TEST(PracticeTest, is_null_palindrome)
+{
+    Practice obj;
+    bool actual = obj.isPalindrome(NULL);
+    ASSERT_FALSE(actual);
 }
 
 //Descending Tests
@@ -141,6 +155,18 @@ TEST(PracticeTest, is_not_descending5)
 	EXPECT_LT(num3, num1);
 }
 
+TEST(PracticeTest, is_not_descending6)
+{
+	Practice obj;
+	int num1 = 0;
+	int num2 = .001;
+	int num3 = 1;
+	obj.sortDescending(num1, num2, num3);
+	EXPECT_LT(num2, num1);
+	EXPECT_LT(num3, num2);
+	EXPECT_LT(num3, num1);
+}
+
 TEST(PracticeTest, is_descending)
 {
 	Practice obj;
@@ -171,6 +197,42 @@ TEST(PracticeTest, is_descending3)
 	int num1 = 0;
 	int num2 = -100;
 	int num3 = -300;
+	obj.sortDescending(num1, num2, num3);
+	EXPECT_LT(num2, num1);
+	EXPECT_LT(num3, num2);
+	EXPECT_LT(num3, num1);
+}
+
+TEST(PracticeTest, is_descending4)
+{
+	Practice obj;
+	int num1 = 43;
+	int num2 = 0;
+	int num3 = -901;
+	obj.sortDescending(num1, num2, num3);
+	EXPECT_LT(num2, num1);
+	EXPECT_LT(num3, num2);
+	EXPECT_LT(num3, num1);
+}
+
+TEST(PracticeTest, is_descending5)
+{
+	Practice obj;
+	int num1 = 1;
+	int num2 = .001;
+	int num3 = 0;
+	obj.sortDescending(num1, num2, num3);
+	EXPECT_LT(num2, num1);
+	EXPECT_LT(num3, num2);
+	EXPECT_LT(num3, num1);
+}
+
+TEST(PracticeTest, is_descending6)
+{
+	Practice obj;
+	int num1 = 10;
+	int num2 = .000000001;
+	int num3 = -.000001;
 	obj.sortDescending(num1, num2, num3);
 	EXPECT_LT(num2, num1);
 	EXPECT_LT(num3, num2);
